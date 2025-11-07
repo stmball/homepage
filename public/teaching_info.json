@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Health Data Science Bootcamp",
+    "description": "A hands-on introduction to data wrangling, modeling, and evaluation for real healthcare datasets.",
+    "tags": ["Python", "Pandas", "ML Basics"]
+  },
+  {
+    "title": "Applied Machine Learning in Healthcare",
+    "description": "From problem framing to deployment: build robust ML pipelines with clinical context in mind.",
+    "tags": ["Scikit-learn", "Validation", "MLOps"]
+  }
+]

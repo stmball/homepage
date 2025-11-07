@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "name": "DeepChannel WebApp",
+    "description": "A web application for applying deep learning models to ion channel patch clamp data.",
+    "problem": "Drugs targeting ion channels account for around 1 in 7 pharmacuticals, however their development is hindered by a lack of efficient data analysis methods.",
+    "solution": "This project aims to provide a user-friendly interface for researchers to analyze their data using state-of-the-art deep learning models.",
+    "facts": ["99% per-point accuracy of time series segmentation"],
+    "tags": ["deep learning"]
+  }
+]

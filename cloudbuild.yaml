@@ -1,0 +1,23 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      - "build"
+      - "-t"
+      - "europe-docker.pkg.dev/$PROJECT_ID/homepage/homepage:latest"
+      - "."
+
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "europe-docker.pkg.dev/$PROJECT_ID/homepage/homepage:latest"]
+
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    entrypoint: gcloud
+    args:
+      - "run"
+      - "deploy"
+      - "homepage"
+      - "--image=europe-docker.pkg.dev/$PROJECT_ID/homepage/homepage:latest"
+      - "--region=europe-west1"
+      - "--platform=managed"
+
+images:
+  - "europe-docker.pkg.dev/$PROJECT_ID/homepage/homepage:latest"
